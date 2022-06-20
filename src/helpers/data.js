@@ -1,5 +1,6 @@
 export const cards = [
   {
+    id: 1,
     subtitle: "с фуа-гра",
     desc: {
       portion: "10",
@@ -10,6 +11,7 @@ export const cards = [
     disabled: "Печалька, с фуа-гра закончился.",
   },
   {
+    id: 2,
     subtitle: "с рыбой",
     desc: {
       portion: "40",
@@ -20,6 +22,7 @@ export const cards = [
     disabled: "Печалька, с рыбой закончился.",
   },
   {
+    id: 3,
     subtitle: "с курой",
     desc: {
       portion: "100",
