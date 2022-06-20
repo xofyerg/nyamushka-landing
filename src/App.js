@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import Card from "./components/Card";
 import { cards } from "./helpers/data";
 import { getRandomIntInclusive } from "./helpers/getRandom";
+import DisabledCard from "./components/DisabledCard";
+import CardContainer from "./components/CardContainer";
 
 const App = () => {
   const [randomNum, setRandomNum] = useState(null);
@@ -19,9 +20,10 @@ const App = () => {
         <div className="cards">
           {cards.map((card) => {
             if (randomNum !== null && randomNum === card.id) {
+              return <DisabledCard card={card} key={card.id} />;
             }
 
-            return <Card card={card} key={card.id} />;
+            return <CardContainer card={card} key={card.id} />;
           })}
         </div>
       </div>
